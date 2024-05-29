@@ -20,12 +20,8 @@ const cookieParser = require("cookie-parser");
 const errorHandler = require("./middleware/error");
 
 //database connection
-mongoose.connect('mongodb+srv://admin:devyansh@cluster0.x5dvco4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
-})
+mongoose.connect('mongodb+srv://admin:devyansh@cluster0.x5dvco4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', 
+  { useNewUrlParser: true,useUnifiedTopology: true })
   .then(() => console.log("DB connected"))
   .catch((err) => console.log(err));
 
