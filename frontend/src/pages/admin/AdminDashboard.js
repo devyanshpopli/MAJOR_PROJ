@@ -44,18 +44,20 @@ const AdminDashboard = () => {
                 <Stack direction={{ xs: 'column', sm: 'row' }} sx={{ mt: 3 }}
                     spacing={{ xs: 1, sm: 2, md: 4 }}>
                     <ChartComponent>
-                        <Chart
+                        {/* <Chart
                             chartType="Bar"
                             data={data}
                             options={options}
                             width="100%"
                             height="300px"
                             legendToggle
-                        />
+                        /> */}
+                        <iframe title="KITPLACE_ANALYTICAL_DASHBOARD" src="https://app.powerbi.com/reportEmbed?reportId=d9c79a33-eec3-4a22-9b37-6b4b8b151522&autoAuth=true&ctid=0c2c5eb2-7477-4593-ac08-f1de3be027d2" width='100%' height='1000px' allowfullscreen frameborder='0'></iframe>
                     </ChartComponent>
                 </Stack>
 
             </Box>
+            
         </>
     )
 }
